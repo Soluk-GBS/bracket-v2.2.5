@@ -12,7 +12,7 @@ services:
       - postgres
     environment:
       ENVIRONMENT: DEVELOPMENT
-      CORS_ORIGINS: http://localhost:3000
+      CORS_ORIGINS: http://${BRACKET_HOST}:3000
       PG_DSN: postgresql://bracket_dev:bracket_dev@postgres:5432/bracket_dev
     image: ghcr.io/evroon/bracket-backend
     networks:
@@ -26,9 +26,11 @@ services:
   bracket-frontend:
     container_name: bracket-frontend
     environment:
-      NEXT_PUBLIC_API_BASE_URL: http://localhost:8400
+      NEXT_PUBLIC_API_BASE_URL: http://10.1.65.189:8400
       NEXT_PUBLIC_HCAPTCHA_SITE_KEY: 10000000-ffff-ffff-ffff-000000000001
     image: ghcr.io/evroon/bracket-frontend
+    networks:
+      - bracket_lan
     ports:
       - 3000:3000
     restart: unless-stopped
