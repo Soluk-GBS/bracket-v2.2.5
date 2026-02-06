@@ -4185,12 +4185,13 @@ markdownlint-micromark@0.1.10:
   resolved "https://registry.yarnpkg.com/markdownlint-micromark/-/markdownlint-micromark-0.1.10.tgz#a77a1a70adad9eac18ff412baf36a0c2189875d7"
   integrity sha512-no5ZfdqAdWGxftCLlySHSgddEjyW4kui4z7amQcGsSKfYC5v/ou+8mIQVyg9KQMeEZLNtz9OPDTj7nnTnoR4FQ==
 
-markdownlint-rule-relative-links@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/markdownlint-rule-relative-links/-/markdownlint-rule-relative-links-4.0.1.tgz#3db474bcb4b5c9b6cf7d7095103428ff36e3e3f2"
-  integrity sha512-tLr8YVR1qeZfMsixFtj49N0ABrPZpTFqk0cz6+j4zB9ZIJ9diiQ7f+npykTeGYvPUVkf5Zw8y4U0JDGGsU+zKQ==
+markdownlint-rule-relative-links@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/markdownlint-rule-relative-links/-/markdownlint-rule-relative-links-5.0.1.tgz#2491746512c29a0c4b25af502fbc41d9e91320f1"
+  integrity sha512-siyArZC6ls9NsaxXlBOjscnmKXsGvQLYgmCwQxbkBYXT6UoOk6+SzaJbqFfaLKV89LJ6ircrLIplIaFitd8J7A==
   dependencies:
     markdown-it "14.1.0"
+    mime "4.1.0"
 
 markdownlint@0.35.0:
   version "0.35.0"
@@ -4881,6 +4882,11 @@ micromatch@4.0.8, micromatch@^4.0.4, micromatch@^4.0.8:
   dependencies:
     braces "^3.0.3"
     picomatch "^2.3.1"
+
+mime@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-4.1.0.tgz#ec55df7aa21832a36d44f0bbee5c04639b27802f"
+  integrity sha512-X5ju04+cAzsojXKes0B/S4tcYtFAJ6tTMuSPBEn9CPGlrWr8Fiw7qYeLT0XyH80HSoAoqWCaz+MWKh22P7G1cw==
 
 mimic-fn@^4.0.0:
   version "4.0.0"
